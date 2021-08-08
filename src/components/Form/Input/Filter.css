@@ -1,0 +1,38 @@
+label {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.form-enter {
+  transform: scale(0.1);
+}
+.form-enter-active {
+  transform: scale(1);
+  transition: transform 2500ms ease;
+}
+.form-exit {
+  transform: scale(1);
+}
+.form-exit-active {
+  transform: scale(0.1);
+  transition: transform 2500ms ease;
+}
+
+.label-enter {
+  transform: translateX(-200%);
+  opacity: 0;
+}
+.label-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 250ms ease;
+}
+.label-exit {
+  transform: translateX(0);
+  opacity: 1;
+}
+.label-exit-active {
+  opacity: 0;
+  transform: translateX(-200%);
+  transition: all 250ms ease;
+}
